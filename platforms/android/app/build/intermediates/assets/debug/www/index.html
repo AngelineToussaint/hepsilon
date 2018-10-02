@@ -26,21 +26,71 @@
         <script type="text/javascript" src="js/lib/materialize.min.js"></script>
 
         <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/controllers/body.js"></script>
+        <script type="text/javascript" src="js/controllers/home.js"></script>
+        <script type="text/javascript" src="js/controllers/map.js"></script>
+        <script type="text/javascript" src="js/controllers/resto.js"></script>
+        <script type="text/javascript" src="js/controllers/schoolLife.js"></script>
+        <script type="text/javascript" src="js/controllers/transport.js"></script>
         <script type="text/javascript" src="js/controllers/contact.js"></script>
         <script type="text/javascript" src="js/services/request.js"></script>
         <script type="text/javascript" src="js/services/utils.js"></script>
     </head>
-    <body class="main-blue">
+    <body class="main-blue" ng-controller="BodyCtrl">
         <nav class="main-cyan">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo center">Logo</a>
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
+                <a href="#" class="brand-logo center">{{pageTitle}}</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li ng-click="changeOpeningMap()">
+                        <i class="material-icons" ng-if="!openMap">map</i>
+                        <i class="material-icons" ng-if="openMap">clear</i>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <div ng-include="'items/contact.html'"></div>
+
+        <div class="map" ng-if="openMap">
+            <div ng-include="'items/map.html'"></div>
+        </div>
+
+        <div class="pages" ng-if="!openMap">
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" data-item="News">
+
+                </a>
+                <a class="carousel-item" data-item="HEPSILON">
+                    <div ng-include="'items/home.html'"></div>
+                </a>
+                <a class="carousel-item" data-item="Vie étudiante">
+                    <div ng-include="'items/schoolLife.html'"></div>
+                </a>
+                <a class="carousel-item" data-item="Parkings">
+                    <div ng-include="'items/parking.html'"></div>
+                </a>
+                <a class="carousel-item" data-item="Transports">
+                    <div ng-include="'items/publicTransport.html'"></div>
+                </a>
+                <a class="carousel-item" data-item="Restauration">
+                    <div ng-include="'items/resto.html'"></div>
+                </a>
+                <a class="carousel-item" data-item="Contact">
+                    <div ng-include="'items/contact.html'"></div>
+                </a>
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $('.carousel.carousel-slider').carousel({
+                        fullWidth: true,
+                        indicators: true,
+                        onCycleTo: function (item) {
+                            angular.element('body').scope().changeTitle(
+                                $(item).data('item')
+                            )
+                        }
+                    });
+                })
+            </script>
+        </div>
     </body>
 </html>

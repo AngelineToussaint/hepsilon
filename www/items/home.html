@@ -1,10 +1,11 @@
 <div ng-controller="HomeCtrl">
-    <div ng-if="mode == undefined">
+    <div ng-if="mode != undefined">
         <p>Je suis...</p>
         <button class="btn wave-effect wave-light" ng-click="pickMode('student')">étudiant</button>
         <button class="btn wave-effect wave-light" ng-click="pickMode('visitor')">visiteur</button>
     </div>
-    <div ng-if="mode != undefined">
+    <div ng-if="mode == undefined" class="center-align">
+        <img src="img/logo.jpg" alt="Logo">
         <!-- content here -->
     </div>
 </div>

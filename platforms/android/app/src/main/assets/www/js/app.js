@@ -22,7 +22,6 @@ app.run(['$rootScope', '$sce', 'Utils', function ($rootScope, $sce, Utils) {
     $rootScope.loading = true; // Load page
 }])
 
-
 // filters
 app.filter('reverse', () => {
     return items => {

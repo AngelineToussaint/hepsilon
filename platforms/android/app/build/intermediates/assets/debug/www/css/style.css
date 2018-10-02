@@ -44,3 +44,5 @@
 .pointer {cursor: pointer!important;}
 
 i.prefix {padding-top: 5px;}
+
+.carousel {height: calc(100vh - 64px)!important;}

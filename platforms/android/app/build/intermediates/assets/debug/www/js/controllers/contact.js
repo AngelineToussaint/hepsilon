@@ -1,8 +1,8 @@
-app.controller('ContactCtrl', ['$scope', '$localForage', 'Request', function ($scope, $localForage, Request) {
+app.controller('ContactCtrl', ['$scope', '$rootScope', '$localForage', 'Request', function ($scope, $rootScope, $localForage, Request) {
 
-    Request.get('http://blabla.com').then(function (res) {
+    /*Request.get('http://blabla.com').then(function (res) {
         console.log(res)
-    })
+    })*/
 
     $localForage.getItem('open').then(function (res) {
         $scope.open = res
