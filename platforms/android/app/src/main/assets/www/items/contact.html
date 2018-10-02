@@ -1,0 +1,20 @@
+<div ng-controller="ContactCtrl" class="main-white-text">
+
+    <div ng-if="open">
+        <p>Blabla</p>
+    </div>
+
+    <a ng-click="showOrHide()" class="btn">
+        <span ng-if="open">Cacher</span>
+        <span ng-if="!open">Afficher</span>
+    </a>
+
+    <p ng-repeat="(key, resto) in list">
+        {{key}} : {{resto.nom}} - {{resto.adresse}}
+    </p>
+
+    <p>{{list.Resto1.nom}} - {{list.Resto1.adresse}}</p>
+
+    <p>{{Utils.keepNumberChars(list.Resto1.adresse, 5)}}</p>
+
+</div>

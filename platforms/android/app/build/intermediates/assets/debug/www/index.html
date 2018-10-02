@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="hepsilon">
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta charset="UTF-8">
+
+        <title>{{siteName}}</title>
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- JS -->
+        <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/angular.min.js"></script>
+        <script type="text/javascript" src="js/lib/angular-animate.min.js"></script>
+        <script type="text/javascript" src="js/lib/localForage.min.js"></script>
+        <script type="text/javascript" src="js/lib/angular-localForage.min.js"></script>
+        <script type="text/javascript" src="js/lib/materialize.min.js"></script>
+
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/controllers/contact.js"></script>
+        <script type="text/javascript" src="js/services/request.js"></script>
+        <script type="text/javascript" src="js/services/utils.js"></script>
+    </head>
+    <body class="main-blue">
+        <nav class="main-cyan">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Logo</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div ng-include="'items/contact.html'"></div>
+    </body>
+</html>
