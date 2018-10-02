@@ -1,0 +1,48 @@
+/* MAINS */
+* {outline: none!important;}
+
+.main-blue {background-color: #1e2131!important;}
+
+.main-blue-text {color: #1e2131!important;}
+
+.main-cyan {background-color: #7ddadb!important;}
+
+.main-cyan-text {color: #7ddadb!important;}
+
+.main-white {background-color: #e6eafd!important;}
+
+.main-white-text {color: #e6eafd!important;}
+
+.smiley {width: 1.2rem; height: 1.2rem; vertical-align: middle;}
+
+.bold {font-weight: bold!important;}
+
+.semi-bold {font-weight: 500!important;}
+
+.normal {font-weight: normal!important;}
+
+.valign {
+    position: absolute!important;
+    top: 50%!important;
+    transform: translateY(-50%)!important;
+}
+
+.halign {
+    position: absolute!important;
+    left: 50%!important;
+    transform: translateX(-50%)!important;
+}
+
+.valign.halign {transform: translate(-50%, -50%)!important;}
+
+.upper {text-transform: uppercase!important;}
+
+.capital {text-transform: capitalize!important;}
+
+.clear {clear: both; visibility: hidden;}
+
+.pointer {cursor: pointer!important;}
+
+i.prefix {padding-top: 5px;}
+
+.carousel {height: calc(100vh - 64px)!important;}
