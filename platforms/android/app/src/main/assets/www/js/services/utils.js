@@ -20,6 +20,9 @@ app.service('Utils', ['$q', '$localForage', '$rootScope', 'Request', function ($
             var newDate = oldDate[1]+"/"+oldDate[0]+"/"+oldDate[2];
 
             return new Date(newDate).getTime() / 1000;
+        },
+        loadLink: link => {
+            window.location.href = link
         }
     }
 }])
