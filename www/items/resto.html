@@ -1,0 +1,10 @@
+<div ng-controller="RestoCtrl">
+
+    <button class="btn" ng-click="selectCategory('pizzeria')">Pizzeria</button>
+    <button class="btn" ng-click="selectCategory('burger')">Burger</button>
+
+    <div class="col s12" ng-repeat="resto in restos | filter: {category: categoryToSelect}">
+        <p>{{resto.name}}</p>
+    </div>
+
+</div>
