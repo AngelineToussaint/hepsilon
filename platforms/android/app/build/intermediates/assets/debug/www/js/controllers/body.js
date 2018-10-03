@@ -1,6 +1,6 @@
 app.controller('BodyCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
 
-    $rootScope.pageTitle = 'HEPSILON'
+    $rootScope.pageTitle = 'HƐPSILON'
 
     $rootScope.changeTitle = function (title) {
         $scope.$apply(function() {
