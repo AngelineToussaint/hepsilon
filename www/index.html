@@ -24,6 +24,7 @@
         <script type="text/javascript" src="js/lib/localForage.min.js"></script>
         <script type="text/javascript" src="js/lib/angular-localForage.min.js"></script>
         <script type="text/javascript" src="js/lib/materialize.min.js"></script>
+        <script type="text/javascript" src="js/lib/codebird.js"></script>
 
         <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript" src="js/controllers/body.js"></script>
@@ -56,13 +57,12 @@
         <div class="pages" ng-if="!openMap">
             <div class="carousel carousel-slider">
                 <a class="carousel-item" data-item="News">
-
+                    <div ng-include="'items/schoolLife.html'"></div>
                 </a>
                 <a class="carousel-item" data-item="HƐPSILON">
                     <div ng-include="'items/home.html'"></div>
                 </a>
                 <a class="carousel-item" data-item="Vie étudiante">
-                    <div ng-include="'items/schoolLife.html'"></div>
                 </a>
                 <a class="carousel-item" data-item="Parkings">
                     <div ng-include="'items/parking.html'"></div>
