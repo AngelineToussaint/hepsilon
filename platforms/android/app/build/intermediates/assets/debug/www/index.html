@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="hepsilon">
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta charset="UTF-8">
+
+        <title>{{siteName}}</title>
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- JS -->
+        <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/angular.min.js"></script>
+        <script type="text/javascript" src="js/lib/angular-animate.min.js"></script>
+        <script type="text/javascript" src="js/lib/localForage.min.js"></script>
+        <script type="text/javascript" src="js/lib/angular-localForage.min.js"></script>
+        <script type="text/javascript" src="js/lib/materialize.min.js"></script>
+
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/controllers/body.js"></script>
+        <script type="text/javascript" src="js/controllers/home.js"></script>
+        <script type="text/javascript" src="js/controllers/map.js"></script>
+        <script type="text/javascript" src="js/controllers/resto.js"></script>
+        <script type="text/javascript" src="js/controllers/schoolLife.js"></script>
+        <script type="text/javascript" src="js/controllers/transport.js"></script>
+        <script type="text/javascript" src="js/controllers/contact.js"></script>
+        <script type="text/javascript" src="js/services/request.js"></script>
+        <script type="text/javascript" src="js/services/utils.js"></script>
+    </head>
+    <body class="main-blue" ng-controller="BodyCtrl">
+        <nav class="main-cyan">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">{{pageTitle}}</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li ng-click="changeOpeningMap()">
+                        <i class="material-icons" ng-if="!openMap">map</i>
+                        <i class="material-icons" ng-if="openMap">clear</i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="map" ng-if="openMap">
+            <div ng-include="'items/map.html'"></div>
+        </div>
+
+        <div class="pages" ng-if="!openMap">
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" data-item="News">
+
+                </a>
+                <a class="carousel-item" data-item="HEPSILON">
+                    <div ng-include="'items/home.html'"></div>
+                </a>
+                <a class="carousel-item" data-item="Vie étudiante">
+                    <div ng-include="'items/schoolLife.html'"></div>
+                </a>
+                <a class="carousel-item" data-item="Parkings">
+                    <div ng-include="'items/parking.html'"></div>
+                </a>
+                <a class="carousel-item" data-item="Transports">
+                    <div ng-include="'items/publicTransport.html'"></div>
+                </a>
+                <a class="carousel-item" data-item="Restauration">
+                    <div ng-include="'items/resto.html'"></div>
+                </a>
+                <a class="carousel-item" data-item="Contact">
+                    <div ng-include="'items/contact.html'"></div>
+                </a>
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $('.carousel.carousel-slider').carousel({
+                        fullWidth: true,
+                        indicators: true,
+                        onCycleTo: function (item) {
+                            angular.element('body').scope().changeTitle(
+                                $(item).data('item')
+                            )
+                        }
+                    });
+                })
+            </script>
+        </div>
+    </body>
+</html>
