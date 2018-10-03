@@ -6,7 +6,7 @@ app.controller('ContactCtrl', ['$scope', '$rootScope', '$localForage', 'Request'
         $scope.schoolSelected = (school != $scope.selectSchool()) ? school : ''
     }
 
-    $scope.school = [
+    $scope.schools = [
         {
             name : 'EPSI',
             mailAddress : 'info@nantes-epsi.fr',
