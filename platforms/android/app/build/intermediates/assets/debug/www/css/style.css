@@ -56,4 +56,7 @@ i.prefix {padding-top: 5px;}
 }
 
 /* RESTO */
+#resto .btn {
+    margin: 10px;
+}
 #resto .col.s6 {height: 100px;}
