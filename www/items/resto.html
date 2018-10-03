@@ -1,10 +1,27 @@
-<div ng-controller="RestoCtrl">
+<div ng-controller="RestoCtrl" id="resto">
 
-    <button class="btn" ng-click="selectCategory('pizzeria')">Pizzeria</button>
     <button class="btn" ng-click="selectCategory('burger')">Burger</button>
+    <button class="btn" ng-click="selectCategory('pizzeria')">Pizzeria</button>
+    <button class="btn" ng-click="selectCategory('restaurant')">Restaurant</button>
+    <button class="btn" ng-click="selectCategory('Sandwicherie')">Sandwicherie</button>
+    <button class="btn" ng-click="selectCategory('grande surface')">Grande Surface</button>
 
-    <div class="col s12" ng-repeat="resto in restos | filter: {category: categoryToSelect}">
-        <p>{{resto.name}}</p>
+    <div class="col s12 restos white-text" ng-repeat="resto in restos | filter: {category: categoryToSelect}">
+        <hr class="grey" ng-if="$index != 0">
+
+        <div class="row">
+            <div class="col s12">
+                <h4>{{resto.name}} - {{resto.price}}</h4>
+            </div>
+            <div class="col s6">
+                <p>
+                    {{resto.category}}
+                    <br>
+                    {{resto.address}}
+                </p>
+            </div>
+            <div class="col s6 background-filled" style="background-image: url('img/restos/{{resto.picture}}.PNG')"></div>
+        </div>
     </div>
 
 </div>
