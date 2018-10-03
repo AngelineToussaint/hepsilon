@@ -45,11 +45,15 @@
 
 i.prefix {padding-top: 5px;}
 
-.carousel {height: calc(100vh - 64px)!important;    }
+.carousel {height: calc(100vh - 64px)!important;}
 
-.menufloor {
-    font-family: "Calibri Light";
-    font-weight: 600;
-    font-size: 160%;
-    color: main-white;
+.carousel-item {overflow-y: auto; padding: 50px 25px;}
+
+.background-filled {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+/* RESTO */
+#resto .col.s6 {height: 100px;}
