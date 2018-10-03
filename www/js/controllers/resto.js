@@ -1,5 +1,11 @@
 app.controller('RestoCtrl', ['$scope', function ($scope) {
 
+    $scope.categoryToSelect = ''
+
+    $scope.selectCategory = function (category){
+        $scope.categoryToSelect = category
+    }
+
     $scope.restos = [
         {
             category : 'Burger',
@@ -67,7 +73,7 @@ app.controller('RestoCtrl', ['$scope', function ($scope) {
         {
             category : 'Sandwicherie',
             name : 'Subway',
-            price : '€-€€',
+            price : '€/€€',
             address : 'Centre Commercial Carrefour Beaulieu, 44200, Nantes',
             picture : 'subway'
         },
@@ -83,48 +89,49 @@ app.controller('RestoCtrl', ['$scope', function ($scope) {
             name : 'Chromosome Restaurant',
             price : '€€',
             address : '6 Promenade Europa, 44200, Nantes'
+            picture : 'chromosomeRestaurant'
         },
         {
             category : 'Pizzeria',
             name : 'La Villa Medicis',
-            price : '€€ - €€€',
+            price : '€€/€€€',
             address : 'Rue Gaetan Rondeau | Centre Commercial Beaulieu, 44200, Nantes',
             picture : 'laVillaMedicis'
         },
         {
             category: 'Pizzeria',
             name: '180G Pizza',
-            price: '€€ - €€€',
+            price: '€€/€€€',
             address: 'Place Francois II | 6c, 44200, Nantes',
             picture : '180GPizza'
         },
         {
             category : 'Pizzeria',
             name : 'Pizza Tradition',
-            price : '€€ - €€€',
+            price : '€€/€€€',
             address : '10 boulevard Adolphe Billault | Boulevard Victor Hugo, 44200, Nantes',
             picture : 'pizzaTradition'
         },
         {
             category : 'Pizzeria',
             name : 'Le Comptoir Sale & Pepe',
-            price : '€€ - €€€',
+            price : '€€/€€€',
             address : '21 Rue Foure, 44000, Nantes',
             picture : 'leComptoirSalePepe'
         },
         {
             category : 'Restaurant',
             name : 'Les Fonderies',
-            price : '€€ - €€€',
+            price : '€€/€€€',
             address : '25 boulevard Vincent Gache, 44200, Nantes'
+            picture : 'lesFonderies'
         },
         {
             category : 'Restaurant',
             name : 'La Passerelle de Marcel',
-            price : '€€ - €€€',
+            price : '€€/€€€',
             address : '7 allée Jacques Berque | Quai Malakoff, 44000, Nantes'
+            picture : 'laPasserelleDeMarcel'
         }
     ]
-
-
 }])
