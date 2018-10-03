@@ -1,3 +1,19 @@
 <div ng-controller="SchoolLifeCtrl">
-
+    <div class="col s12">
+        <div masonry load-images="true" class="grid default">
+            <div class="masonry-brick grid-item card" ng-repeat="post in posts | orderBy: '-date' | limitTo: quantity">
+                <div class="card-content main-blue-text">
+                    <a class="card-title" target="_blank" href="https://twitter.com/%7B%7Bpost.account%7D%7D%22%3E">{{post.account}}</a>
+                    <p class="bold">Publié le : {{post.date_formatted}}</p>
+                    <p ng-bind-html="trustAsHtml(post.content)"></p>
+                    <img class="materialboxed" ng-if="post.other.img != null" ng-src="{{post.other.img}}" style="margin-top: 20px" width="100%">
+                </div>
+                <div class="card-action">
+                    <a class="main-blue-text" ng-if="post.other.likes != undefined">{{post.other.likes}} <i class="fa fa-heart"></i></a>
+                    <a class="main-blue-text" ng-if="post.other.shares != undefined">{{post.other.shares}} <i class="fa fa-retweet"></i></a>
+                    <a class="main-blue-text" target="_blank" href="{{post.link}}">Afficher</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
