@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Oct 03 16:52:21 CEST 2018
+#Wed Oct 03 17:03:58 CEST 2018
 76.base=D\:\\Logiciels\\wamp\\www\\hepsilon\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 5.base=D\:\\Logiciels\\wamp\\www\\hepsilon\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 42.base=D\:\\Logiciels\\wamp\\www\\hepsilon\\platforms\\android\\app\\build\\intermediates\\assets\\debug

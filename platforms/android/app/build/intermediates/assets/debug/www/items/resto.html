@@ -1,10 +1,10 @@
 <div ng-controller="RestoCtrl" id="resto">
     <div class="center-align">
-        <button class="btn" ng-click="selectCategory('burger')">Burger</button>
-        <button class="btn" ng-click="selectCategory('pizzeria')">Pizzeria</button>
-        <button class="btn" ng-click="selectCategory('restaurant')">Restaurant</button>
-        <button class="btn" ng-click="selectCategory('Sandwicherie')">Sandwicherie</button>
-        <button class="btn" ng-click="selectCategory('grande surface')">Grande Surface</button>
+        <button class="btn" ng-class="{'grey': categoryToSelect == 'burger'}" ng-click="selectCategory('burger')">Burger</button>
+        <button class="btn" ng-class="{'grey': categoryToSelect == 'pizzeria'}" ng-click="selectCategory('pizzeria')">Pizzeria</button>
+        <button class="btn" ng-class="{'grey': categoryToSelect == 'restaurant'}" ng-click="selectCategory('restaurant')">Restaurant</button>
+        <button class="btn" ng-class="{'grey': categoryToSelect == 'Sandwicherie'}" ng-click="selectCategory('Sandwicherie')">Sandwicherie</button>
+        <button class="btn" ng-class="{'grey': categoryToSelect == 'grande surface'}" ng-click="selectCategory('grande surface')">Grande Surface</button>
     </div>
 
     <div class="col s12 restos white-text" ng-repeat="resto in restos | filter: {category: categoryToSelect}">

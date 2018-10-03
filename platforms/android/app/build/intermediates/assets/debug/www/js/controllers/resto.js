@@ -3,7 +3,7 @@ app.controller('RestoCtrl', ['$scope', function ($scope) {
     $scope.categoryToSelect = ''
 
     $scope.selectCategory = function (category){
-        $scope.categoryToSelect = category
+        $scope.categoryToSelect = (category != $scope.categoryToSelect) ? category : ''
     }
 
     $scope.restos = [
