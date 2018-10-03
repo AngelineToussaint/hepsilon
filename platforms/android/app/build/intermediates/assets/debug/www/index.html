@@ -40,8 +40,8 @@
         <nav class="main-cyan">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo center">{{pageTitle}}</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li ng-click="changeOpeningMap()">
+                <ul id="nav-mobile" class="right">
+                    <li ng-click="changeOpeningMap()" class="pointer">
                         <i class="material-icons" ng-if="!openMap">map</i>
                         <i class="material-icons" ng-if="openMap">clear</i>
                     </li>
@@ -58,7 +58,7 @@
                 <a class="carousel-item" data-item="News">
 
                 </a>
-                <a class="carousel-item" data-item="HEPSILON">
+                <a class="carousel-item" data-item="HƐPSILON">
                     <div ng-include="'items/home.html'"></div>
                 </a>
                 <a class="carousel-item" data-item="Vie étudiante">
@@ -88,7 +88,8 @@
                                 $(item).data('item')
                             )
                         }
-                    });
+                    })
+                        .carousel('set', 1)
                 })
             </script>
         </div>
