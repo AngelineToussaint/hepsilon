@@ -88,7 +88,7 @@ app.controller('RestoCtrl', ['$scope', function ($scope) {
             category : 'Restaurant',
             name : 'Chromosome Restaurant',
             price : '€€',
-            address : '6 Promenade Europa, 44200, Nantes'
+            address : '6 Promenade Europa, 44200, Nantes',
             picture : 'chromosomeRestaurant'
         },
         {
@@ -123,14 +123,14 @@ app.controller('RestoCtrl', ['$scope', function ($scope) {
             category : 'Restaurant',
             name : 'Les Fonderies',
             price : '€€/€€€',
-            address : '25 boulevard Vincent Gache, 44200, Nantes'
+            address : '25 boulevard Vincent Gache, 44200, Nantes',
             picture : 'lesFonderies'
         },
         {
             category : 'Restaurant',
             name : 'La Passerelle de Marcel',
             price : '€€/€€€',
-            address : '7 allée Jacques Berque | Quai Malakoff, 44000, Nantes'
+            address : '7 allée Jacques Berque | Quai Malakoff, 44000, Nantes',
             picture : 'laPasserelleDeMarcel'
         }
     ]
