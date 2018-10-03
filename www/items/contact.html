@@ -1,33 +1,33 @@
-<div ng-controller="ContactCtrl" class="main-white-text">
+<div ng-controller="ContactCtrl" id="contact" class="main-white-text">
     <div class="center-align">
         <button class="btn waves-effect waves-light" ng-class="{'grey': schoolSelected == 'epsi'}" ng-click="selectSchool('epsi')">EPSI</button>
         <button class="btn waves-effect waves-light" ng-class="{'grey': schoolSelected == 'idrac'}" ng-click="selectSchool('idrac')">IDRAC</button>
         <button class="btn waves-effect waves-light" ng-class="{'grey': schoolSelected == 'ifag'}" ng-click="selectSchool('ifag')">IFAG</button>
         <button class="btn waves-effect waves-light" ng-class="{'grey': schoolSelected == 'igefi'}" ng-click="selectSchool('igefi')">IGEFI</button>
         <button class="btn waves-effect waves-light" ng-class="{'grey': schoolSelected == 'open source school'}" ng-click="selectSchool('open source school')">OPEN SOURCE SCHOOL</button>
-        <button class="btn waves-effect waves-light" ng-class="{'grey': schoolSelected == 'sup de com'}" ng-click="selectSchool('sup de com')">Grande Surface</button>
-        <button class="btn waves-effect waves-light" ng-class="{'grey': schoolSelected == 'wis'}" ng-click="selectSchool('wis')">wis</button>
+        <button class="btn waves-effect waves-light" ng-class="{'grey': schoolSelected == 'sup\'de com'}" ng-click="selectSchool('sup\'de com')">SUP DE COM</button>
+        <button class="btn waves-effect waves-light" ng-class="{'grey': schoolSelected == 'wis'}" ng-click="selectSchool('wis')">WIS</button>
 
 
-    <div class="col s12 schools white-text" ng-repeat="school in schools | filter: {school: schoolSelect}">
+    <div class="col s12 schools white-text" ng-repeat="school in schools | filter: {name: schoolSelected}">
         <hr class="grey-text" ng-if="$index != 0">
 
         <div class="row">
             <div class="col s12">
                 <h4>{{school.name}}</h4>
             </div>
-            <div class="col s6">
+            <div class="col s12">
+                <img src="img/contact/{{school.picture}}.PNG">
                 <p>
                     {{school.mailAddress}}
                     <br>
                     <span class="grey-text">
                     {{school.phone}}
                     </span>
-                    {{school.site}}
                     <br>
+                    <a ng-click="Utils.loadLink(school.site)">{{school.site}}</a>
                 </p>
             </div>
-            <div class="col s6 background-filled" style="background-image: url('img/restos/{{school.picture}}.PNG')"></div>
         </div>
     </div>
 

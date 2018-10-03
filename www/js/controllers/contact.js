@@ -2,8 +2,8 @@ app.controller('ContactCtrl', ['$scope', '$rootScope', '$localForage', 'Request'
 
     $scope.schoolSelected = ''
 
-    $scope.selectSchool = function (school){
-        $scope.schoolSelected = (school != $scope.selectSchool()) ? school : ''
+    $scope.selectSchool = function (name){
+        $scope.schoolSelected = (name != $scope.schoolSelected) ? name : ''
     }
 
     $scope.schools = [
