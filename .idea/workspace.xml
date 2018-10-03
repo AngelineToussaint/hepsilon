@@ -134,8 +134,8 @@
       <file leaf-file-name="resto.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/items/resto.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="107" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="107" />
+            <state relative-caret-position="138">
+              <caret line="6" column="95" selection-start-line="2" selection-start-column="8" selection-end-line="6" selection-end-column="95" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -148,6 +148,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
               <caret line="89" column="25" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -184,9 +193,9 @@
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/items/home.html" />
+        <option value="$PROJECT_DIR$/www/js/controllers/resto.js" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/items/resto.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers/resto.js" />
       </list>
     </option>
   </component>
@@ -265,6 +274,12 @@
               <item name="hepsilon" type="b2602c69:ProjectViewProjectNode" />
               <item name="hepsilon" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hepsilon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hepsilon" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hepsilon" type="b2602c69:ProjectViewProjectNode" />
@@ -403,15 +418,16 @@
       <workItem from="1538503306175" duration="3067000" />
       <workItem from="1538567486830" duration="238000" />
       <workItem from="1538570387530" duration="1509000" />
-      <workItem from="1538572340935" duration="2172000" />
+      <workItem from="1538572340935" duration="3533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25534000" />
+    <option name="totallyTimeSpent" value="26895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -631,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
@@ -652,10 +661,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/items/resto.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="107" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="107" />
+        <state relative-caret-position="138">
+          <caret line="6" column="95" selection-start-line="2" selection-start-column="8" selection-end-line="6" selection-end-column="95" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
