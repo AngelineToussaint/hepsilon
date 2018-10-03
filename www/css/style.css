@@ -55,8 +55,7 @@ i.prefix {padding-top: 5px;}
     background-repeat: no-repeat;
 }
 
-/* RESTO */
+#resto .col.s6, #parking .col.s6 {height: 100px;}
+#resto hr, #parking hr {
+#resto .price, #parking .time {font-size: 16px;}
 #resto .btn {
-    margin: 10px;
-}
-#resto .col.s6 {height: 100px;}
