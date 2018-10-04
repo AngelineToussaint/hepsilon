@@ -1,10 +1,30 @@
-<div ng-controller="RestoCtrl">
+<div ng-controller="RestoCtrl" id="resto">
+    <div class="center-align">
+        <button class="btn waves-effect waves-light" ng-class="{'grey': categoryToSelect == 'burger'}" ng-click="selectCategory('burger')">Burger</button>
+        <button class="btn waves-effect waves-light" ng-class="{'grey': categoryToSelect == 'pizzeria'}" ng-click="selectCategory('pizzeria')">Pizzeria</button>
+        <button class="btn waves-effect waves-light" ng-class="{'grey': categoryToSelect == 'restaurant'}" ng-click="selectCategory('restaurant')">Restaurant</button>
+        <button class="btn waves-effect waves-light" ng-class="{'grey': categoryToSelect == 'Sandwicherie'}" ng-click="selectCategory('Sandwicherie')">Sandwicherie</button>
+        <button class="btn waves-effect waves-light" ng-class="{'grey': categoryToSelect == 'grande surface'}" ng-click="selectCategory('grande surface')">Grande Surface</button>
+    </div>
 
-    <button class="btn" ng-click="selectCategory('pizzeria')">Pizzeria</button>
-    <button class="btn" ng-click="selectCategory('burger')">Burger</button>
+    <div class="col s12 restos white-text" ng-repeat="resto in restos | filter: {category: categoryToSelect}">
+        <hr class="grey-text" ng-if="$index != 0">
 
-    <div class="col s12" ng-repeat="resto in restos | filter: {category: categoryToSelect}">
-        <p>{{resto.name}}</p>
+        <div class="row">
+            <div class="col s12">
+                <h4>{{resto.name}} <span class="grey-text price">- {{resto.price}}</span></h4>
+            </div>
+            <div class="col s6">
+                <p>
+                    {{resto.category}}
+                    <br>
+                    <span class="grey-text">
+                    {{resto.address}}
+                    </span>
+                </p>
+            </div>
+            <div class="col s6 background-filled" style="background-image: url('img/restos/{{resto.picture}}.PNG')"></div>
+        </div>
     </div>
 
 </div>
