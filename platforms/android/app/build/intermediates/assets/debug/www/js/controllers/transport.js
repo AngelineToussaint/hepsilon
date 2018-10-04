@@ -73,6 +73,7 @@ app.controller('PublicTransportCtrl', ['$scope', 'Request', function ($scope, Re
 
     $scope.calculTime = function (breakPoint) {
 
+<<<<<<< HEAD
         Request.get('http://open.tan.fr/ewp/tempsattente.json/' + breakPoint.codeLieu)
             .then(function (waitTimes) {
                 // Contain time + terminus in object
@@ -101,6 +102,8 @@ app.controller('PublicTransportCtrl', ['$scope', 'Request', function ($scope, Re
             })
 
     }
+=======
+>>>>>>> angeline
 }])
     .controller('ParkingCtrl', ['$scope', function ($scope) {
         $scope.parkings = [
