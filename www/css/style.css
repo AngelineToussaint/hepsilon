@@ -87,12 +87,11 @@ i.prefix {padding-top: 5px;}
     margin: 10px;
 }
 
-/*Contact*/
 #contact img {
     width: 100%;
 }
 
-.titleFloor {
+#maphep .titleFloor {
     font-family: "Calibri";
     font-weight: 600;
     font-size: 160%;
@@ -103,7 +102,8 @@ i.prefix {padding-top: 5px;}
     padding: 0px 25px;
 }
 
-.carousel-map{
-    height: 300px !important;
-    overflow-y: hidden !important;
-}
+#maphep .number-floor .materialboxed {width: 100%}
+
+#maphep .carousel {margin-top: -50px!important; z-index: 999999999}
+
+#maphep .carousel-item {padding: 0;overflow: hidden;}
