@@ -1,7 +1,106 @@
-app.controller('PublicTransportCtrl', ['$scope', function ($scope) {
+app.controller('PublicTransportCtrl', ['$scope', 'Request', function ($scope, Request) {
+    $scope.breakPoints = [
+        {
+            codeLieu: "IDNA",
+            libelle: "Île de Nantes",
+            distance: "78 m",
+            type: "bus",
+            ligne: [
+                {
+                    numLigne: 4
+                },
+                {
+                    numLigne: "C5"
+                }
+            ]
+        },
+        {
+            codeLieu: "VGAC",
+            libelle: "Vincent Gâche",
+            distance: "190 m",
+            type: "tram",
+            ligne: [
+                {
+                    numLigne: 2
+                },
+                {
+                    numLigne: 3
+                },
+                {
+                    numLigne: "C5"
+                }
+            ]
+        },
+        {
+            codeLieu: "FOND",
+            libelle: "Fonderies",
+            distance: "276 m",
+            type: "bus",
+            ligne: [
+                {
+                    numLigne: "C5"
+                }
+            ]
+        },
+        {
+            codeLieu: "MOZI",
+            libelle: "Monzie",
+            distance: "292 m",
+            type: "bus",
+            ligne: [
+                {
+                    numLigne: 26
+                }
+            ]
+        },
+        {
+            codeLieu: "BENA",
+            libelle: "Beaulieu",
+            distance: "292 m",
+            type: "bus",
+            ligne: [
+                {
+                    numLigne: 4
+                },
+                {
+                    numLigne: 26
+                }
+            ]
+        },
+    ]
 
+    angular.element('.collapsible').collapsible();
 
+    $scope.calculTime = function (breakPoint) {
 
+        Request.get('http://open.tan.fr/ewp/tempsattente.json/' + breakPoint.codeLieu)
+            .then(function (waitTimes) {
+                // Contain time + terminus in object
+                breakPoint.times = []
+
+                // Loop of all wait times
+                angular.forEach(waitTimes, function (waitTime) {
+
+                    var terminusAlreadyInBreakPointTime = false
+
+                    angular.forEach(breakPoint.times, function (time) {
+                        if (waitTime.terminus == time.terminus) {
+                            terminusAlreadyInBreakPointTime = true
+                        }
+                    })
+
+                    // Add the waitTime only if the terminus is not already in breakPoint.times[]
+                    if (!terminusAlreadyInBreakPointTime) {
+                        breakPoint.times.push({
+                            numLigne: waitTime.ligne.numLigne,
+                            terminus: waitTime.terminus,
+                            temps: waitTime.temps
+                        })
+                    }
+                })
+            })
+
+    }
 }])
     .controller('ParkingCtrl', ['$scope', function ($scope) {
         $scope.parkings = [

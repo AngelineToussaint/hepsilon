@@ -28,12 +28,12 @@
         "source": "D:\\Logiciels\\wamp\\www\\hepsilon\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxhdpi\\screen.png"
     },
     {
-        "merged": "D:\\Logiciels\\wamp64\\www\\hepsilon\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi_screen.png.flat",
-        "source": "D:\\Logiciels\\wamp64\\www\\hepsilon\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
-    },
-    {
         "merged": "D:\\Logiciels\\wamp\\www\\hepsilon\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxhdpi_screen.png.flat",
         "source": "D:\\Logiciels\\wamp\\www\\hepsilon\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "D:\\Logiciels\\wamp64\\www\\hepsilon\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi_screen.png.flat",
+        "source": "D:\\Logiciels\\wamp64\\www\\hepsilon\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
     },
     {
         "merged": "D:\\Logiciels\\wamp\\www\\hepsilon\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",

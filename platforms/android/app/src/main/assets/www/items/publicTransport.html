@@ -1,3 +1,39 @@
 <div ng-controller="PublicTransportCtrl">
+    <p class="center-align white-text">Les différents points d'arrêt de la TAN</p>
 
+    <ul class="collapsible popout white-text">
+        <li ng-repeat="breakPoint in breakPoints">
+            <div class="collapsible-header main-cyan-text">
+                <i class="material-icons" ng-if="breakPoint.type == 'bus'">directions_bus</i>
+                <i class="material-icons" ng-if="breakPoint.type == 'tram'">tram</i>
+                {{breakPoint.libelle}}
+            </div>
+            <div class="collapsible-body main-cyan">
+                <p>Cet arrêt est à {{breakPoint.distance}} du campus HEP.</p>
+                <p>
+                    Les lignes
+                    <span ng-repeat="line in breakPoint.ligne"><span ng-if="$index != 0">,</span> {{line.numLigne}}</span>
+                    passent par ce point d'arrêt.
+                </p>
+                <table ng-if="breakPoint.times != undefined">
+                    <thead>
+                    <tr>
+                        <th>Ligne</th>
+                        <th>Terminus</th>
+                        <th>Temps attente</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr ng-repeat="time in breakPoint.times">
+                        <td>{{time.numLigne}}</td>
+                        <td>{{time.terminus}}</td>
+                        <td>{{time.temps}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button class="btn waves-effect waves-light" ng-click="calculTime(breakPoint)">Calculer le temps d'attente</button>
+            </div>
+        </li>
+    </ul>
 </div>
