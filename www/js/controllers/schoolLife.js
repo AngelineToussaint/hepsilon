@@ -5,7 +5,7 @@ app.controller('SchoolLifeCtrl', ['$scope', function ($scope) {
             id: '1041642558177325057',
             account: 'Nantes Digital Week',
             network: 'twitter',
-            date_formatted: '17/10/2018 03:58:00',
+            date_formatted: '17/09/2018 03:58:00',
             content: ".@Brunoteboul de @gfiinformatique refait l'histoire de l'intelligence artificielle qui est très récente puisque datant de 60 ans pour aboutir au #deeplearning afin de montrer aux étudiants de l'@EPSI_Nantes le cheminement scientifique et technologique de l'#IA",
             link: 'https://twitter.com/NantesDigitalW/status/1041642558177325057',
             other: {
