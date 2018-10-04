@@ -3,6 +3,19 @@ app.controller('MapCtrl', ['$scope', '$rootScope', function ($scope, $rootScope)
     $scope.floorPicked = 0
     $scope.floor = "Rez de chausée"
     $scope.numberFloor ="RC"
+    $scope.show ="Map"
+
+    $scope.swap = function  (show){
+        if ($scope.show == "Map"){
+            $scope.show = "Carou"
+            setTimeout(function () {
+                angular.element('.carousel').carousel();
+            },100)
+
+        }else{$scope.show = "Map"}
+    }
+
+
 
     $scope.pickFloor = function (floor) {
          $scope.floorPicked = floor

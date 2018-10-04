@@ -1,16 +1,26 @@
-<div ng-controller="MapCtrl">
+<div ng-controller="MapCtrl" id="maphep">
 
     <h3 class="titleFloor main-white-text">{{floor}}
         <span class="btn-floating btn-small waves-effect waves-light blue darken-4 menuFloor">{{numberFloor}}</span>
     </h3>
+    <div ng-if="show=='Map'">
+    <div><img src="img/Couloir_iso.png" class="toto" style="width: 100%"></div>
+    <div><img src="img/Couloir_iso.png" class="toto1" style="display: none; width: 100%" ></div>
+    <div><img src="img/Couloir_iso.png" class="toto2" style="display: none; width: 100%" ></div>
+    <div><img src="img/Couloir_iso.png" class="toto3" style="display: none; width: 100%" ></div></div>
 
-    <div class="toto" style="background: orange; width: 80px; height: 30px;"></div>
-    <div class="toto1" style="background: red; width: 80px; height: 30px; display: none;"></div>
-    <div class="toto2" style="background: purple; width: 80px; height: 30px; display: none;"></div>
-    <div class="toto3" style="background: blue; width: 80px; height: 30px; display: none;"></div>
+    <div class="carousel caroussel-map" ng-if="show=='Carou'" style="height: 500px !important; padding:0 !important; overflow-y: none !important">
+        <a class="carousel-item" href="#one!" style="padding: 0; height: 300px"><img src="img/Couloir_iso.png"></a>
+        <a class="carousel-item" href="#two!" style="padding: 0; height: 300px"><img src="img/Couloir_iso.png"></a>
+        <a class="carousel-item" href="#three!" style="padding: 0; height: 300px"><img src="img/Couloir_iso.png"></a>
+        <a class="carousel-item" href="#four!" style="padding: 0; height: 300px"><img src="img/Couloir_iso.png"></a>
+        <a class="carousel-item" href="#five!" style="padding: 0; height: 300px"><img src="img/Couloir_iso.png"></a>
+    </div>
+
+    <a class="waves-effect waves-light btn" style="position: absolute; bottom: 30px;" ng-click="swap('carou')">photos</a>
 
     <div class="fixed-action-btn">
-        <a class="btn-floating btn-large main-cyan">
+        <a class="btn-floating btn-large waves-effect waves-light main-cyan">
             <i class="fas fa-angle-up fa-2x"></i>
         </a>
         <ul>
@@ -20,6 +30,7 @@
             <li><a class="btn-floating blue-grey" ng-click="setNumEtage('Rez de chaussée','RC')"><span class="menufloor">RC</span></a></li>
         </ul>
     </div>
+
 
 
 </div>
