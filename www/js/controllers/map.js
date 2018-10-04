@@ -4,8 +4,9 @@ app.controller('MapCtrl', ['$scope', '$rootScope', function ($scope, $rootScope)
     $scope.floor = "Rez de chausée"
     $scope.numberFloor ="RC"
     $scope.show ="Map"
+    $scope.pm = "Photos"
 
-    $scope.swap = function  (show){
+    $scope.swap = function  (show,pm){
         if ($scope.show == "Map"){
             $scope.show = "Carou"
             setTimeout(function () {
@@ -13,8 +14,24 @@ app.controller('MapCtrl', ['$scope', '$rootScope', function ($scope, $rootScope)
             },100)
 
         }else{$scope.show = "Map"}
+
+        setTimeout(function () {
+            angular.element('.number-floor:not(.floor-'+ $scope.numberFloor +')').hide();
+            angular.element('.floor-'+ $scope.numberFloor).show();
+        }, 100)
+
+        if($scope.pm == "Photos"){
+            $scope.pm = "Map"
+        }else($scope.pm ="Photos")
     }
 
+
+    $scope.swapCarou = {
+        RC: ["rdc-a","rdc-b","rdc-c","planEtage"],
+        1: ["etage1-a","etage1-b","etage1-c","etage1-d"],
+        2: ["etage2-a","etage2-b","etage2-c","etage2-d"],
+        3: ["etage3-a","etage3-b","etage3-c","etage3-d"]
+    }
 
 
     $scope.pickFloor = function (floor) {
@@ -30,30 +47,15 @@ app.controller('MapCtrl', ['$scope', '$rootScope', function ($scope, $rootScope)
             $scope.floor = floor
             $scope.numberFloor = numberFloor
 
+            var array = ['RC', 1, 2, 3]
 
-            if ( ( angular.element( ".toto" ).is( ":hidden" )) && ($scope.numberFloor == 'RC') ) {
-                angular.element( ".toto" ).slideDown( "slow" );
-            } else if ($scope.numberFloor != 'RC') {
-                angular.element( ".toto" ).slideUp( "slow" );
-            }
-
-            if ( ( angular.element( ".toto1" ).is( ":hidden" )) && ($scope.numberFloor == 1) ) {
-                angular.element( ".toto1" ).slideDown( "slow" );
-            } else if ($scope.numberFloor != 1) {
-                angular.element( ".toto1" ).slideUp( "slow" );
-            }
-
-            if ( ( angular.element( ".toto2" ).is( ":hidden" )) && ($scope.numberFloor == 2) ) {
-                angular.element( ".toto2" ).slideDown( "slow" );
-            } else if ($scope.numberFloor != 2){
-                angular.element( ".toto2" ).slideUp( "slow" );
-            }
-
-            if ( ( angular.element( ".toto3" ).is( ":hidden" )) && ($scope.numberFloor == 3) ) {
-                angular.element( ".toto3" ).slideDown( "slow" );
-            } else if ($scope.numberFloor != 3){
-                angular.element( ".toto3" ).slideUp( "slow" );
-            }
+            array.forEach(function (floor) {
+                if ( ( angular.element( ".floor-" + floor ).is( ":hidden" )) && ($scope.numberFloor == floor) ) {
+                    angular.element( ".floor-" + floor ).slideDown( "slow" );
+                } else if ($scope.numberFloor != floor) {
+                    angular.element( ".floor-" + floor ).slideUp( "slow" );
+                }
+            })
         }
 
 }])

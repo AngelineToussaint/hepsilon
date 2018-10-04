@@ -4,20 +4,18 @@
         <span class="btn-floating btn-small waves-effect waves-light blue darken-4 menuFloor">{{numberFloor}}</span>
     </h3>
     <div ng-if="show=='Map'">
-    <div><img src="img/Couloir_iso.png" class="toto" style="width: 100%"></div>
-    <div><img src="img/Couloir_iso.png" class="toto1" style="display: none; width: 100%" ></div>
-    <div><img src="img/Couloir_iso.png" class="toto2" style="display: none; width: 100%" ></div>
-    <div><img src="img/Couloir_iso.png" class="toto3" style="display: none; width: 100%" ></div></div>
+    <div><img src="img/rdc.jpg" class="number-floor floor-RC" style="width: 100%"></div>
+    <div><img src="img/Couloir_iso.png" class="number-floor floor-1" style="display: none; width: 100%" ></div>
+    <div><img src="img/etage2.jpg" class="number-floor floor-2" style="display: none; width: 100%" ></div>
+    <div><img src="img/etage3.jpg" class="number-floor floor-3" style="display: none; width: 100%" ></div></div>
 
-    <div class="carousel caroussel-map" ng-if="show=='Carou'" style="height: 500px !important; padding:0 !important; overflow-y: none !important">
-        <a class="carousel-item" href="#one!" style="padding: 0; height: 300px"><img src="img/Couloir_iso.png"></a>
-        <a class="carousel-item" href="#two!" style="padding: 0; height: 300px"><img src="img/Couloir_iso.png"></a>
-        <a class="carousel-item" href="#three!" style="padding: 0; height: 300px"><img src="img/Couloir_iso.png"></a>
-        <a class="carousel-item" href="#four!" style="padding: 0; height: 300px"><img src="img/Couloir_iso.png"></a>
-        <a class="carousel-item" href="#five!" style="padding: 0; height: 300px"><img src="img/Couloir_iso.png"></a>
+    <div class="carousel caroussel-map number-floor floor-{{key}}" ng-if="show=='Carou'" style="height: 500px !important; padding:0 !important; overflow-y: hidden !important" ng-repeat="(key, carouImgs) in swapCarou">
+        <a class="carousel-item" style="padding: 0; height: 300px" ng-repeat="img in carouImgs">
+            <img ng-src="img/{{img}}.jpg">
+        </a>
     </div>
 
-    <a class="waves-effect waves-light btn" style="position: absolute; bottom: 30px;" ng-click="swap('carou')">photos</a>
+    <a class="waves-effect waves-light btn" style="position: absolute; bottom: 30px;" ng-click="swap('carou',0)">{{pm}}</a>
 
     <div class="fixed-action-btn">
         <a class="btn-floating btn-large waves-effect waves-light main-cyan">
