@@ -1,6 +1,8 @@
 /* MAINS */
 * {outline: none!important;}
 
+body {overflow-x: hidden;}
+
 .main-blue {background-color: #1e2131!important;}
 
 .main-blue-text {color: #1e2131!important;}
@@ -54,6 +56,14 @@ i.prefix {padding-top: 5px;}
     background-position: center;
     background-repeat: no-repeat;
 }
+
+#nav-mobile .material-icons {margin-right: 30px;}
+
+#home .pick-mode .main-cyan {height: 200px; position: relative;}
+
+#home .pick-mode .grey {height: 200px; position: relative;}
+
+#home .pick-mode .halign.valign {font-size: 24px;}
 
 #resto .col.s6, #parking .col.s6 {height: 100px;}
 #resto hr, #parking hr {

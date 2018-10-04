@@ -40,14 +40,24 @@
         <nav class="main-cyan">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo center">{{pageTitle}}</a>
-                <ul id="nav-mobile" class="right">
+                <ul id="nav-mobile" class="right" ng-if="mode != undefined">
                     <li ng-click="changeOpeningMap()" class="pointer">
-                        <i class="material-icons" ng-if="!openMap">map</i>
+                        <i id="openMap" class="material-icons" ng-if="!openMap">map</i>
                         <i class="material-icons" ng-if="openMap">clear</i>
                     </li>
                 </ul>
             </div>
         </nav>
+
+        <div class="tap-target main-blue" data-target="openMap">
+            <div class="tap-target-content main-white-text">
+                <h5>Par ici 🤓</h5>
+                <p>
+                    Pour commencer la visite, cliquez sur la carte ci-dessus.<br>
+                    Vous aurez alors la possibilité d'afficher une carte et des photos, en navigant étage par étage.
+                </p>
+            </div>
+        </div>
 
         <div class="map" ng-if="openMap">
             <div ng-include="'items/map.html'"></div>
@@ -55,43 +65,25 @@
 
         <div class="pages" ng-if="!openMap">
             <div class="carousel carousel-slider">
-                <a class="carousel-item" data-item="News">
-
+                <a class="carousel-item" data-item="News" ng-if="mode != null">
+                    <div ng-include="'items/schoolLife.html'"></div>
                 </a>
                 <a class="carousel-item" data-item="HƐPSILON">
                     <div ng-include="'items/home.html'"></div>
                 </a>
-                <a class="carousel-item" data-item="Vie étudiante">
-                    <div ng-include="'items/schoolLife.html'"></div>
-                </a>
-                <a class="carousel-item" data-item="Parkings">
+                <a class="carousel-item" data-item="Parkings" ng-if="mode != null">
                     <div ng-include="'items/parking.html'"></div>
                 </a>
-                <a class="carousel-item" data-item="Transports">
+                <a class="carousel-item" data-item="Transports" ng-if="mode != null">
                     <div ng-include="'items/publicTransport.html'"></div>
                 </a>
-                <a class="carousel-item" data-item="Restauration">
+                <a class="carousel-item" data-item="Restauration" ng-if="mode != null">
                     <div ng-include="'items/resto.html'"></div>
                 </a>
-                <a class="carousel-item" data-item="Contact">
+                <a class="carousel-item" data-item="Contact" ng-if="mode != null">
                     <div ng-include="'items/contact.html'"></div>
                 </a>
             </div>
-
-            <script>
-                $(document).ready(function () {
-                    $('.carousel.carousel-slider').carousel({
-                        fullWidth: true,
-                        indicators: true,
-                        onCycleTo: function (item) {
-                            angular.element('body').scope().changeTitle(
-                                $(item).data('item')
-                            )
-                        }
-                    })
-                        .carousel('set', 1)
-                })
-            </script>
         </div>
     </body>
 </html>
