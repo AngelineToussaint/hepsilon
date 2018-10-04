@@ -47,9 +47,27 @@ i.prefix {padding-top: 5px;}
 
 .carousel {height: calc(100vh - 64px)!important;    }
 
-.menufloor {
+.carousel-item {overflow-y: auto; padding: 50px 25px;}
+
+.menuFloor {
     font-family: "Calibri Light";
     font-weight: 600;
     font-size: 160%;
-    color: main-white;
+    color: #e6eafd !important;
+}
+
+.titleFloor {
+    font-family: "Calibri";
+    font-weight: 600;
+    font-size: 160%;
+    color: #e6eafd !important;
+}
+
+#maphep {
+    padding: 0px 25px;
+}
+
+.carousel-map{
+    height: 300px !important;
+    overflow-y: hidden !important;;
 }

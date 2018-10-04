@@ -45,4 +45,18 @@
 
 i.prefix {padding-top: 5px;}
 
-.carousel {height: calc(100vh - 64px)!important;}
+.carousel {height: calc(100vh - 64px)!important;    }
+
+.menuFloor {
+    font-family: "Calibri Light";
+    font-weight: 600;
+    font-size: 160%;
+    color: #e6eafd !important;
+}
+
+.titleFloor {
+    font-family: "Calibri";
+    font-weight: 600;
+    font-size: 160%;
+    color: #e6eafd !important;
+}
