@@ -1,5 +1,6 @@
 app.controller('SchoolLifeCtrl', ['$scope', function ($scope) {
     $scope.quantity = 5
+
     $scope.posts = [
         {
             id: '1041642558177325057',
@@ -172,6 +173,10 @@ app.controller('SchoolLifeCtrl', ['$scope', function ($scope) {
         }
     ]
 
+    setTimeout(function () {
+        angular.element('.materialboxed').materialbox()
+    })
+
     // $scope.twitterKey = 'bEaSHXMVHprULUyytGErgxtsx'
     // $scope.twitterSecret = 'LFUoZV3ompdlDY9lYy4tX0KOGBArLH2f3dxklueSWuxEHZhI0A'
 
@@ -224,18 +229,21 @@ app.controller('SchoolLifeCtrl', ['$scope', function ($scope) {
     //     );
     // }
 
-    // $scope.loadMore = function() {
-    //     $scope.quantity = $scope.quantity + 5
-    // }
+    document.addEventListener('scroll', function (event) {
+        var id = event.target.id
 
-    angular.element(".carousel-item.active").scroll(function() {
-        console.log("coucou");
-        if(angular.element(".carousel-item.active").scrollTop() + angular.element(".carousel-item.active").height() > angular.element(".carousel-item.active div").height() - 10) {
-            $scope.$apply(function () {
-              $scope.quantity = $scope.quantity + 5
-            })
+        if (id === 'carousel-schoolLife') {
+            if(angular.element('#' + id).scrollTop() + angular.element('#' + id).height() > angular.element('#' + id + ' div').children().height() - 10) {
+                $scope.$apply(function () {
+                    $scope.quantity = $scope.quantity + 5
+
+                    setTimeout(function () {
+                        angular.element('.materialboxed').materialbox()
+                    })
+                })
+            }
         }
-    });
+    }, true);
 
     // $scope.getTwitterPosts()
 }])
