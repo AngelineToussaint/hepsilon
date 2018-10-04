@@ -4,8 +4,11 @@
     <list default="true" id="e1429e85-4daf-49bd-8346-f22ff8fd1cb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/www/items/parking.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/items/parking.html" afterDir="false" />
 =======
+=======
+>>>>>>> axel
       <change beforePath="$PROJECT_DIR$/www/img/Couloir_iso.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/img/Couloir_iso.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/items/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/items/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/js/controllers/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/controllers/map.js" afterDir="false" />
@@ -165,6 +168,7 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="resto.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/items/resto.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -187,6 +191,8 @@
               <caret line="48" selection-start-line="48" selection-end-line="48" />
 >>>>>>> adrien
 =======
+=======
+>>>>>>> axel
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/items/map.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -210,11 +216,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+<<<<<<< HEAD
+>>>>>>> axel
+=======
 >>>>>>> axel
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
@@ -233,11 +243,16 @@
               </folding>
 >>>>>>> adrien
 =======
+=======
+>>>>>>> axel
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="241">
               <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+<<<<<<< HEAD
+>>>>>>> axel
+=======
 >>>>>>> axel
             </state>
           </provider>
@@ -270,8 +285,11 @@
         <option value="$PROJECT_DIR$/www/js/services/request.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/schoolLife.js" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/www/items/map.html" />
 =======
+=======
+>>>>>>> axel
         <option value="$PROJECT_DIR$/www/items/resto.html" />
 >>>>>>> axel
         <option value="$PROJECT_DIR$/www/items/schoolLife.html" />
@@ -283,7 +301,11 @@
         <option value="$PROJECT_DIR$/www/js/controllers/contact.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/transport.js" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/www/js/controllers/map.js" />
+=======
+        <option value="$PROJECT_DIR$/www/items/parking.html" />
+>>>>>>> axel
 =======
         <option value="$PROJECT_DIR$/www/items/parking.html" />
 >>>>>>> axel
@@ -294,11 +316,16 @@
         <option value="$PROJECT_DIR$/www/css/style.css" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/www/items/resto.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/resto.js" />
 =======
         <option value="$PROJECT_DIR$/www/items/parking.html" />
 >>>>>>> adrien
+=======
+        <option value="$PROJECT_DIR$/www/items/map.html" />
+        <option value="$PROJECT_DIR$/www/js/controllers/map.js" />
+>>>>>>> axel
 =======
         <option value="$PROJECT_DIR$/www/items/map.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/map.js" />
@@ -358,8 +385,11 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="x" value="-10" />
 =======
+=======
+>>>>>>> axel
     <option name="x" value="345" />
 >>>>>>> axel
     <option name="y" value="-10" />
@@ -396,6 +426,9 @@
               <item name="hepsilon" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> axel
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -448,7 +481,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538572739982" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538648255333" />
+>>>>>>> axel
 =======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538648255333" />
 >>>>>>> axel
@@ -540,6 +577,7 @@
       <workItem from="1538484026072" duration="11475000" />
       <workItem from="1538503306175" duration="3067000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1538567486830" duration="238000" />
 <<<<<<< HEAD
       <workItem from="1538570387530" duration="1509000" />
@@ -549,15 +587,21 @@
       <workItem from="1538570387530" duration="2196000" />
 >>>>>>> adrien
 =======
+=======
+>>>>>>> axel
       <workItem from="1538567486830" duration="10491000" />
       <workItem from="1538637469392" duration="10610000" />
       <workItem from="1538648379798" duration="1491000" />
       <workItem from="1538657186452" duration="7773000" />
+<<<<<<< HEAD
+>>>>>>> axel
+=======
 >>>>>>> axel
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="29669000" />
@@ -575,6 +619,8 @@
 =======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21677852" />
 =======
+=======
+>>>>>>> axel
     <option name="totallyTimeSpent" value="51980000" />
   </component>
   <component name="ToolWindowManager">
@@ -582,6 +628,9 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22172236" />
+<<<<<<< HEAD
+>>>>>>> axel
+=======
 >>>>>>> axel
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
 >>>>>>> adrien
@@ -610,7 +659,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32850942" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.22102426" />
+>>>>>>> axel
 =======
       <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.22102426" />
 >>>>>>> axel
@@ -787,6 +840,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/www/items/map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -796,12 +850,23 @@
     </entry>
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/www/js/controllers/map.js">
+=======
+    <entry file="file://$PROJECT_DIR$/www/items/parking.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/body.js">
+>>>>>>> axel
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/www/js/controllers/body.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -813,9 +878,19 @@
 =======
     <entry file="file://$PROJECT_DIR$/www/js/controllers/body.js">
 >>>>>>> axel
+=======
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        <state relative-caret-position="442">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/items/home.html">
+>>>>>>> axel
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -864,6 +939,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -882,11 +958,18 @@
         <state relative-caret-position="1547">
           <caret line="91" column="24" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
 >>>>>>> axel
+=======
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="91" column="24" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
+>>>>>>> axel
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="1357">
           <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
@@ -926,6 +1009,13 @@
         </state>
       </provider>
     </entry>
+=======
+        <state relative-caret-position="241">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> axel
     <entry file="file://$PROJECT_DIR$/www/js/controllers/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -946,6 +1036,9 @@
             <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+<<<<<<< HEAD
+>>>>>>> axel
+=======
 >>>>>>> axel
         </state>
       </provider>

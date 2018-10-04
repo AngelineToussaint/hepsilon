@@ -1,0 +1,25 @@
+<div ng-controller="MapCtrl">
+
+    <h3 class="titleFloor main-white-text">{{floor}}
+        <span class="btn-floating btn-small waves-effect waves-light blue darken-4 menuFloor">{{numberFloor}}</span>
+    </h3>
+
+    <div class="toto" style="background: orange; width: 80px; height: 30px;"></div>
+    <div class="toto1" style="background: red; width: 80px; height: 30px;"></div>
+    <div class="toto2" style="background: purple; width: 80px; height: 30px;"></div>
+    <div class="toto3" style="background: blue; width: 80px; height: 30px;"></div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large main-cyan">
+            <i class="fas fa-angle-up fa-2x"></i>
+        </a>
+        <ul>
+            <li><a class="btn-floating blue-grey" ng-click="setNumEtage('Étage',3)"><span class="menufloor">3</span></a></li>
+            <li><a class="btn-floating blue-grey" ng-click="setNumEtage('Étage',2)"><span class="menufloor">2</span></a></li>
+            <li><a class="btn-floating blue-grey" ng-click="setNumEtage('Étage',1)"><span class="menufloor">1</span></a></li>
+            <li><a class="btn-floating blue-grey" ng-click="setNumEtage('Rez de chaussée','RC')"><span class="menufloor">RC</span></a></li>
+        </ul>
+    </div>
+
+
+</div>
