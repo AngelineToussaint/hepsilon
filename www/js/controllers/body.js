@@ -14,6 +14,8 @@ app.controller('BodyCtrl', ['$scope', '$rootScope', function ($scope, $rootScope
         $rootScope.openMap = !$rootScope.openMap
 
         $rootScope.pageTitle = ($rootScope.openMap == true) ? 'Visite' : ''
+
+        $rootScope.hideVisit = true
     }
 
 }])

@@ -43,8 +43,7 @@
                 <a href="#" class="brand-logo center">{{pageTitle}}</a>
                 <ul id="nav-mobile" class="right" ng-if="mode != undefined">
                     <li ng-click="changeOpeningMap()" class="pointer">
-                        <i id="openMap" class="material-icons" ng-if="!openMap">map</i>
-                        <i class="material-icons" ng-if="openMap">clear</i>
+                        <i id="openMap" class="material-icons">{{openMap ? 'clear' : 'map'}}</i>
                     </li>
                 </ul>
             </div>

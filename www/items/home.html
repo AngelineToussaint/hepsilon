@@ -17,6 +17,6 @@
     <div ng-if="mode != null" class="center-align">
         <h1>Bienvenue sur</h1>
         <img src="img/logo.png" width="100%" alt="Logo">
-        <button class="btn waves-effect waves-light" style="margin-top: 50px" onclick="$('.tap-target').tapTarget('open');">Commencer la visite</button>
+        <button class="btn waves-effect waves-light" ng-if="!hideVisit" style="margin-top: 50px" onclick="$('.tap-target').tapTarget('open');">Commencer la visite</button>
     </div>
 </div>

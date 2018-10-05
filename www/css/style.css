@@ -1,6 +1,8 @@
 /* MAINS */
 * {outline: none!important;}
 
+html {overflow: hidden;}
+
 body {overflow-x: hidden; position: relative;}
 
 .main-blue {background-color: #1e2131!important;}
