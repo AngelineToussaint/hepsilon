@@ -1,7 +1,7 @@
 <div ng-controller="MapCtrl" id="maphep">
 
     <h3 class="titleFloor main-white-text">{{floor}}
-        <span class="btn-floating btn-small waves-effect waves-light blue darken-4 menuFloor">{{numberFloor}}</span>
+        <span class="btn-floating btn-small waves-effect waves-light blue darken-4 menuFloor" style="z-index: 0">{{numberFloor}}</span>
     </h3>
     <div ng-if="show=='Map'">
         <div class="number-floor floor-RC">
@@ -37,7 +37,7 @@
         </script>
     </div>
 
-    <a class="waves-effect waves-light btn" style="position: absolute; bottom: 30px;" ng-click="swap('carou',0)">{{pm}}</a>
+    <a class="waves-effect waves-light btn" style="position: fixed; bottom: 30px;" ng-click="swap('carou',0)">{{pm}}</a>
 
     <div class="fixed-action-btn">
         <a class="btn-floating btn-large waves-effect waves-light main-cyan">
